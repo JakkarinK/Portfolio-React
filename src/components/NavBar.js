@@ -4,11 +4,11 @@ import MenuList from './MenuList'
 function NavBar() {
   const menuList = [
     // Name, Link
-    ['Profile', '/'],
-    ['Skills', '/skills'],
-    ['Experiences', '/experiences'],
-    ['Educations', '/educations'],
-    ['Socials', '/socials'],
+    ['Profile', 'Portfolio-React/'],
+    ['Skills', 'Portfolio-React/skills'],
+    ['Experiences', 'Portfolio-React/experiences'],
+    ['Educations', 'Portfolio-React/educations'],
+    ['Socials', 'Portfolio-React/socials'],
   ]
   return (
     <div className='navbar'>
