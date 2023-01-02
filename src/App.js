@@ -16,7 +16,7 @@ function App() {
       <div className="App">
         <NavBar />
         <Routes>
-          <Route index element={<Profile />} />
+          <Route index path='/' element={<Profile />} />
           <Route path={'/skills'} element={<Skills/>}/>
           <Route path={'/educations'} element={<Educations />}/>
           <Route path={'/experiences'} element={<Experiences />}/>
