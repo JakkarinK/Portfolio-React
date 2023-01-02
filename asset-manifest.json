@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/JakkarinK/Portfolio-React/static/css/main.d3b8beea.css",
-    "main.js": "/JakkarinK/Portfolio-React/static/js/main.c1db11f1.js",
-    "static/js/787.aeca62f9.chunk.js": "/JakkarinK/Portfolio-React/static/js/787.aeca62f9.chunk.js",
-    "static/media/profile.jpg": "/JakkarinK/Portfolio-React/static/media/profile.2a2e5b3783e218e35a06.jpg",
-    "index.html": "/JakkarinK/Portfolio-React/index.html",
-    "main.d3b8beea.css.map": "/JakkarinK/Portfolio-React/static/css/main.d3b8beea.css.map",
-    "main.c1db11f1.js.map": "/JakkarinK/Portfolio-React/static/js/main.c1db11f1.js.map",
-    "787.aeca62f9.chunk.js.map": "/JakkarinK/Portfolio-React/static/js/787.aeca62f9.chunk.js.map"
+    "main.css": "/Portfolio-React/static/css/main.d3b8beea.css",
+    "main.js": "/Portfolio-React/static/js/main.f8d6e3dc.js",
+    "static/js/787.aeca62f9.chunk.js": "/Portfolio-React/static/js/787.aeca62f9.chunk.js",
+    "static/media/profile.jpg": "/Portfolio-React/static/media/profile.2a2e5b3783e218e35a06.jpg",
+    "index.html": "/Portfolio-React/index.html",
+    "main.d3b8beea.css.map": "/Portfolio-React/static/css/main.d3b8beea.css.map",
+    "main.f8d6e3dc.js.map": "/Portfolio-React/static/js/main.f8d6e3dc.js.map",
+    "787.aeca62f9.chunk.js.map": "/Portfolio-React/static/js/787.aeca62f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d3b8beea.css",
-    "static/js/main.c1db11f1.js"
+    "static/js/main.f8d6e3dc.js"
   ]
 }
