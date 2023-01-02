@@ -1,0 +1,41 @@
+.educations {
+    width: 100%;
+    min-height: 85vh;
+    padding: 80px 0;
+    color: var(--bg-color-4);
+    background-color: var(--bg-color-1);
+}
+.educations .container{
+    display: flex;
+    flex-direction: column;
+}
+.cardEdu{
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 1rem;
+    padding: 15px 10px;
+    background-color: var(--bg-color-2);
+    border-radius: 10px;
+    box-shadow: 0 0 5px var(--bg-color-3);
+    transition: .2s ease-in-out;
+    cursor: default;
+}
+.cardEdu h1{
+    max-width: 300px;
+    width: 100%;
+    text-align: right;
+    font-size: 26px;
+}
+.cardEdu .detail{
+    width: 60%;
+}
+.cardEdu .detail h2{
+    font-size: 26px;
+}
+.cardEdu .detail p{
+    font-size: 18px;
+}
+
+.cardEdu:hover{box-shadow: 0 0 10px var(--bg-color-4);}

@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+:root {
+  --bg-color-1: #0F084B;
+  --bg-color-2: #26408B;
+  --bg-color-3: #3D60A7;
+  --bg-color-4: #81B1D5;
+  --bg-color-5: #A0D2E7;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Mono', monospace;
+  color: var(--bg-color-4);
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  background-color: var(--bg-color-1);
+}
+.navbar .container{  border-bottom: 1px solid var(--bg-color-4);}
+
+.navbar h1 {
+  display: inline;
+  color: var(--bg-color-4);
+  margin-left: 10px;
+  text-transform: uppercase;
+}
+
+.navbar nav {
+  margin: 10px;
+  float: right;
+}
+
+.menulist {
+  display: flex;
+  list-style-type: none;
+
+}
+
+.menulist a {
+  font-size: 22px;
+  padding: 10px 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--bg-color-3);
+  text-shadow: 0 0 10px var(--bg-color-3);
+  transition: .2s ease-in-out;
+}
+.menulist a:hover{
+  color: var(--bg-color-4);
+  text-shadow: 0 0 10px var(--bg-color-5);
+}
+
+/************************************** End Navbar *******************************************/
+
+.copyright{background-color: var(--bg-color-1);}
+
+.copyright .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  border-top: 1px solid var(--bg-color-4);
+  color: var(--bg-color-4);
+  font-size: 18px;
+}
+
+.copyright article {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+.copyright .credit ul {
+  list-style-type: none;
+  display: flex;
+}
+.copyright .credit ul li{margin: 0 5px;}
+.copyright .credit ul li a {padding: 10px;}
+.copyright .credit ul li a i {transition: .3s ease-in-out;}
+.copyright .credit ul li:nth-child(1) a i {color: rgb(76, 76, 196);}
+.copyright .credit ul li:nth-child(2) a i {color: rgb(207, 76, 76);}
+.copyright .credit ul li:nth-child(3) a i {color: #5250d1;}
+.copyright .credit ul li:nth-child(4) a i {color: rgb(49, 126, 49);}
+
+/* Hover */
+.copyright .credit ul li:nth-child(1):hover a i{color: rgb(82, 82, 255);}
+.copyright .credit ul li:nth-child(2):hover a i{color: rgb(255, 73, 73);}
+.copyright .credit ul li:nth-child(3):hover a i{color: #5451ff;}
+.copyright .credit ul li:nth-child(4):hover a i{color: rgb(58, 209, 58);}
