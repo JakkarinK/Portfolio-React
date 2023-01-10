@@ -3,7 +3,7 @@ import './experiences.css'
 
 function SkillsEXP(props) {
   return (
-    <div>
+    <div className='skillsEXP'>
         {props.skills.map((skill)=>{
             return <li>{skill}</li>
         })}

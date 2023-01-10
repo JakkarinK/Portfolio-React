@@ -2,7 +2,7 @@ import React from 'react'
 
 function CardEdu(props) {
   return (
-    <div>
+    <div className='cardEdu-list'>
       {
         props.educationsList.map((edu) => {
           return (

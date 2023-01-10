@@ -1,6 +1,6 @@
 .skills {
     width: 100%;
-    min-height: 85vh;
+    min-height: 100vh;
     padding: 80px 0;
     color: var(--bg-color-4);
     background-color: var(--bg-color-1);
@@ -33,3 +33,22 @@
 }
 .skills-list li:hover{box-shadow: 0 0 10px var(--bg-color-4);}
 
+@media only screen and (max-width: 900px) {
+    .skills h1{text-align: center;}
+    .skills ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .skills h1{font-size: 28px;}
+    .skills .skills-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: .5rem;
+    }
+}

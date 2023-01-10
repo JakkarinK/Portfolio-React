@@ -1,16 +1,21 @@
 .educations {
     width: 100%;
-    min-height: 85vh;
+    min-height: 100vh;
     padding: 80px 0;
     color: var(--bg-color-4);
     background-color: var(--bg-color-1);
 }
-.educations .container{
+
+.educations .container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-.cardEdu{
+
+.cardEdu {
     width: 100%;
+    height: auto;
     display: flex;
     gap: 2rem;
     justify-content: center;
@@ -22,20 +27,61 @@
     transition: .2s ease-in-out;
     cursor: default;
 }
-.cardEdu h1{
+
+.cardEdu h1 {
     max-width: 300px;
     width: 100%;
     text-align: right;
     font-size: 26px;
 }
-.cardEdu .detail{
+
+.cardEdu .detail {
     width: 60%;
 }
-.cardEdu .detail h2{
+
+.cardEdu .detail h2 {
     font-size: 26px;
 }
-.cardEdu .detail p{
+
+.cardEdu .detail p {
     font-size: 18px;
 }
 
-.cardEdu:hover{box-shadow: 0 0 10px var(--bg-color-4);}
+.cardEdu:hover {
+    box-shadow: 0 0 10px var(--bg-color-4);
+}
+
+@media only screen and (max-width: 900px) {
+    .cardEdu-list {
+        width: 90%;
+    }
+
+    .cardEdu h1 {
+        width: 40%;
+    }
+
+    .cardEdu .detail {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .cardEdu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .cardEdu h1{
+        width: 100%;
+        text-align: center;
+        font-size: 22px;
+    }
+    .cardEdu .detail{
+        width: 100%;
+        text-align: center;
+    }
+    .cardEdu .detail h2{font-size: 22px;}
+    .cardEdu .detail p{font-size: 16px;}
+}

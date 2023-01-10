@@ -1,6 +1,6 @@
 .profile {
     width: 100%;
-    min-height: 85vh;
+    min-height: 100vh;
     padding: 80px 0;
     color: var(--bg-color-4);
     background-color: var(--bg-color-1);
@@ -47,4 +47,22 @@
 .profile img:hover {
     box-shadow: 0 0 10px var(--bg-color-3);
     opacity: 1;
+}
+
+@media only screen and (max-width: 900px) {
+    .profile .detail{
+        flex-direction: column-reverse;
+    }
+    .profile .detail .topic{
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 550px) {
+   .profile img {
+    max-width: 240px;
+    max-height: 240px;
+   }
+   .profile .detail .topic h1{font-size: 14px;}
+   .profile .detail .topic h2{font-size: 28px;}
+   .profile .detail .topic p{font-size: 12px; margin: 0 20px;}
 }

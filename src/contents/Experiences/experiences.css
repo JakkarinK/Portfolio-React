@@ -40,7 +40,7 @@
 .cardexp .detail li{
     display: inline-block;
     padding: 15px 20px;
-    margin: 0 5px;
+    margin: 5px 5px;
     border-radius: 5px;
     box-shadow: 0 0 5px var(--bg-color-3);
     background-color: var(--bg-color-2);
@@ -48,3 +48,37 @@
     cursor: default;
 }
 .cardexp .detail li:hover{box-shadow: 0 0 10px var(--bg-color-4);}
+
+@media only screen and (max-width: 900px) {
+    .experiences .container{
+        gap: 2rem;
+    }
+    .cardexp{
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 10px 0;
+    }
+    .cardexp .detail{
+        text-align: center;
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .cardexp img{
+        width: 300px;
+        height: 200px;
+    }
+    .cardexp .detail h2{font-size: 22px;}
+    .cardexp .detail p{font-size: 14px;}
+    .cardexp .detail li{
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .cardexp img{
+        width: 260px;
+        height: 180px;
+    }
+}

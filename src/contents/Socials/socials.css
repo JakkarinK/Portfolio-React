@@ -42,3 +42,8 @@
 }
 .socials ul li a:hover i{color: var(--bg-color-5);}
 
+@media only screen and (max-width: 550px) {
+    .socials ul li a{
+        min-width: 250px;
+    }
+}
