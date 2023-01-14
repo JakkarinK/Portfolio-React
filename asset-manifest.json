@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio-React/static/css/main.4d3f92ca.css",
-    "main.js": "/Portfolio-React/static/js/main.121d768b.js",
+    "main.css": "/Portfolio-React/static/css/main.38c988ad.css",
+    "main.js": "/Portfolio-React/static/js/main.628d2013.js",
     "static/media/Dreamlendar.png": "/Portfolio-React/static/media/Dreamlendar.f74ecd74b60b24a8965a.png",
     "static/media/profile.jpg": "/Portfolio-React/static/media/profile.2a2e5b3783e218e35a06.jpg",
     "static/media/Tea.png": "/Portfolio-React/static/media/Tea.e8d9cfebb73aaf0cee0a.png",
@@ -10,11 +10,11 @@
     "static/media/website.png": "/Portfolio-React/static/media/website.1a984c1d3ab90e4cfc1e.png",
     "static/media/Resume_JakkarinK.pdf": "/Portfolio-React/static/media/Resume_JakkarinK.d67a018764dc582d6612.pdf",
     "index.html": "/Portfolio-React/index.html",
-    "main.4d3f92ca.css.map": "/Portfolio-React/static/css/main.4d3f92ca.css.map",
-    "main.121d768b.js.map": "/Portfolio-React/static/js/main.121d768b.js.map"
+    "main.38c988ad.css.map": "/Portfolio-React/static/css/main.38c988ad.css.map",
+    "main.628d2013.js.map": "/Portfolio-React/static/js/main.628d2013.js.map"
   },
   "entrypoints": [
-    "static/css/main.4d3f92ca.css",
-    "static/js/main.121d768b.js"
+    "static/css/main.38c988ad.css",
+    "static/js/main.628d2013.js"
   ]
 }
