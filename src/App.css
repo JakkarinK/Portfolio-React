@@ -15,7 +15,6 @@
   font-family: 'Roboto Mono', monospace;
   color: var(--bg-color-4);
 }
-
 .container {
   max-width: 1140px;
   width: 100%;
@@ -28,6 +27,7 @@
   min-height: 70px;
   background-color: var(--bg-color-1);
   padding: 20px 0;
+  border-bottom: 1px solid var(--bg-color-4);
 }
 
 .navbar h1 {
@@ -102,9 +102,7 @@
 .copyright .credit ul li:nth-child(3):hover a i{color: #5451ff;}
 .copyright .credit ul li:nth-child(4):hover a i{color: rgb(58, 209, 58);}
 
-@media only screen and (max-width: 1024px) {
-  .navbar{  border-bottom: 1px solid var(--bg-color-4);}
-}
+
 @media only screen and (max-width: 900px) {
   .navbar .container{
     display: flex;

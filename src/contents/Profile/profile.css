@@ -11,17 +11,6 @@
     justify-content: center;
     gap: 4rem;
 }
-.profile .container a{
-    display: block;
-    align-self: center;
-    text-decoration: none;
-    font-size: 36px;
-    text-align: center;
-    padding: 10px 25px;
-    background-color: var(--bg-color-2);
-    border-radius: 5px;
-    box-shadow: 0 0 5px var(--bg-color-5);
-}
 .profile .detail{
     display: flex;
     align-items: center;
@@ -32,6 +21,16 @@
 .profile .topic h1 {font-size: 16px;}
 .profile .topic h2 {font-size: 32px;}
 .profile .topic p {font-size: 14px; padding: 20px 0;}
+.profile .topic a{
+    text-decoration: none;
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 10px 25px;
+    background-color: var(--bg-color-2);
+    border-radius: 5px;
+    box-shadow: 0 0 5px var(--bg-color-5);
+}
 .profile img {
     display: block;
     float: right;

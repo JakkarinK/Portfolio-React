@@ -15,10 +15,11 @@ function Profile() {
                             at Thammasat University.<br />
                             This is my portfolio, Thank you for visited.
                         </p>
+                        <a href={Resume}>Resume</a>
                     </div>
                     <img src={ProfilePic} alt="profile" />
                 </div>
-                <a href={Resume}>Resume</a>
+                
             </div>
         </section>
     )
