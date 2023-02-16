@@ -5,11 +5,19 @@ import DreamPic from './img/Dreamlendar.png'
 import RoomraiPic from './img/Roomrai.png'
 import PortPic from './img/Port.jpg'
 import WebsitePic from './img/website.png'
+import Velocity from './img/velocity.png'
 import TeaPic from './img/Tea.png'
 
 function Experiences() {
     const expList = [
         //name, description, cover, use_lang
+        [
+            'Velocity Website Templete',
+            'Blog website is a website me training to do, I do fullstack-developer.',
+            Velocity,
+            ['HTML', 'CSS', 'JavaScript', 'ReactJS']
+            
+        ],
         [
             'Blog Website',
             'Blog website is a website me training to do, I do fullstack-developer.',
