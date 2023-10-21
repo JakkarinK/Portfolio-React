@@ -12,10 +12,11 @@
     gap: 1rem;
     justify-content: center;
 }
-.cardexp{
+.cardexp a{
     display: flex;
     justify-content: center;
     gap: 2rem;
+    text-decoration: none;
 }
 .cardexp img{
     width: 360px;

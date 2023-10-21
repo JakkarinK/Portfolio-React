@@ -7,22 +7,38 @@ import PortPic from './img/Port.jpg'
 import WebsitePic from './img/website.png'
 import Velocity from './img/velocity.png'
 import TeaPic from './img/Tea.png'
-
+import BonikPic from './img/bonik.png'
+import CoffeePic from './img/coffee.png'
 function Experiences() {
     const expList = [
         //name, description, cover, use_lang
         [
+            'CoffeeStyle',
+            'Website shopping templete from webflow website, Create for learning and practice',
+            CoffeePic,
+            ['HTML', 'SCSS', 'JaveScript', 'ReactJS'],
+            'https://jakkarink.github.io/Coffee-Style-Website/'
+        ],
+        [
+            'Ecommerce-ReactJS',
+            'Website shopping templete from Bonik website, Create for learning and practice',
+            BonikPic,
+            ['HTML', 'SCSS', 'JaveScript', 'ReactJS']
+        ],
+        [
             'Velocity Website Templete',
             'Blog website is a website me training to do, I do fullstack-developer.',
             Velocity,
-            ['HTML', 'CSS', 'JavaScript', 'ReactJS']
+            ['HTML', 'CSS', 'JavaScript', 'ReactJS'],
+            'https://jakkarink.github.io/Velocity-Templete/'
             
         ],
         [
-            'Blog Website',
+            'ChillAid Website',
             'Blog website is a website me training to do, I do fullstack-developer.',
             WebsitePic,
-            ['HTML', 'CSS', 'JavaScript', 'ReactJS']
+            ['HTML', 'CSS', 'JavaScript', 'ReactJS'],
+            'https://jakkarink.github.io/ChillAid-React/'
             
         ],
         [
@@ -54,11 +70,9 @@ function Experiences() {
     return (
         <section className='experiences'>
             <div className="container">
-                <CardExp expList={expList[0]}/> {/* Blog Website */}
-                <CardExp expList={expList[1]}/> {/* Portfolio */}
-                <CardExp expList={expList[2]}/> {/* Roomrai  */}
-                <CardExp expList={expList[3]}/> {/* Dreamlendar*/}
-                <CardExp expList={expList[4]}/> {/* Coffee Market */}
+                {expList.map((item, idx)=>{
+                    return (<CardExp expList={item} />)
+                })}
             </div>
         </section>
     )
