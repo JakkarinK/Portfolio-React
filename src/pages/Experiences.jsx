@@ -79,7 +79,7 @@ const Experiences = () => {
           <Grid container spacing={2}>
             {expList.reverse().map((data) => (
               <Grid item xs={12} md={6}>
-                <Link to={data.website}>
+                <Link to={data.website} target="_blank">
                   <Paper
                     className="exp-hover-custom"
                     elevation={2}
