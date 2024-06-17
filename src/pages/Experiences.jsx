@@ -25,9 +25,27 @@ import CSS from "../assets/img/icon/CSS.svg";
 import MUI from "../assets/img/icon/MUI.svg";
 import ReactJS from "../assets/img/icon/ReactJS.svg";
 import SCSS from "../assets/img/icon/SCSS.svg";
+import BootStrap5 from "../assets/img/icon/BootStrap5.svg";
+import PHP from "../assets/img/icon/PHP.svg";
 
 const Experiences = () => {
-  const expList = [
+  const workList = [
+    {
+      title: "Bangkok Web Solution Co.,Ltd.",
+      date: "8 Jan 2024 - 4 May 2024",
+      subtitle: "Front End Developer",
+      img: Chillaid,
+      option: [
+        ["HTML", HTML],
+        ["CSS", CSS],
+        ["JavaScript", JavaScript],
+        ["SCSS", SCSS],
+        ["PHP", PHP],
+        ["BootStrap5", BootStrap5],
+      ],
+    },
+  ];
+  const projectList = [
     {
       website: "https://jakkarink.github.io/ChillAid-React/",
       title: "Chillaid",
@@ -75,31 +93,24 @@ const Experiences = () => {
   return (
     <>
       <Container>
-        <Box>
-          <Grid container spacing={2}>
-            {expList.reverse().map((data) => (
-              <Grid item xs={12} md={6}>
-                <Link to={data.website} target="_blank">
-                  <Paper
-                    className="exp-hover-custom"
-                    elevation={2}
-                    sx={{ p: 2 }}
-                  >
-                    <img
-                      src={data.img}
-                      alt=""
-                      style={{
-                        objectFit: "cover",
-                        objectPosition: "top",
-                        width: "100%",
-                        boxShadow: "0 0 10px " + bgShadow,
-                        borderRadius: "5px",
-                      }}
-                    />
+        <Box display={"flex"} flexDirection={"column"} gap={7}>
+          <Box>
+            <Grid container spacing={2}>
+              <Grid item xs={12}>
+                <Divider>
+                  <Chip label="WORK EXPERIENCES" size="medium" />
+                </Divider>
+              </Grid>
+              <Grid item xs={12}>
+                {workList.reverse().map((data) => (
+                  <Paper elevation={2} sx={{ p: 2 }}>
                     <Box>
                       <Box px={1} my={1}>
                         <Typography variant="h5" component={"h5"}>
                           {data.title}
+                        </Typography>
+                        <Typography variant="subtitle1" component={"span"}>
+                          {data.date}
                         </Typography>
                         <Typography variant="body1" component={"p"}>
                           {data.subtitle}
@@ -131,10 +142,77 @@ const Experiences = () => {
                       </Box>
                     </Box>
                   </Paper>
-                </Link>
+                ))}
               </Grid>
-            ))}
-          </Grid>
+            </Grid>
+          </Box>
+
+          <Box>
+            <Grid container spacing={2}>
+              <Grid item xs={12}>
+                <Divider>
+                  <Chip label="PROJECTS" size="medium" />
+                </Divider>
+              </Grid>
+              {projectList.reverse().map((data) => (
+                <Grid item xs={12} md={6}>
+                  <Link to={data.website} target="_blank">
+                    <Paper
+                      className="exp-hover-custom"
+                      elevation={2}
+                      sx={{ p: 2 }}
+                    >
+                      <img
+                        src={data.img}
+                        alt=""
+                        style={{
+                          objectFit: "cover",
+                          objectPosition: "top",
+                          width: "100%",
+                          boxShadow: "0 0 10px " + bgShadow,
+                          borderRadius: "5px",
+                        }}
+                      />
+                      <Box>
+                        <Box px={1} my={1}>
+                          <Typography variant="h5" component={"h5"}>
+                            {data.title}
+                          </Typography>
+                          <Typography variant="body1" component={"p"}>
+                            {data.subtitle}
+                          </Typography>
+                        </Box>
+                        <Divider />
+                        <Box
+                          mt={1}
+                          sx={{
+                            display: "flex",
+                            flexWrap: "wrap",
+                            gap: 1,
+                          }}
+                        >
+                          {data.option.map((opt) => (
+                            <Chip
+                              className="chip-custom"
+                              avatar={
+                                <Avatar
+                                  className={opt[0]}
+                                  alt="Icon"
+                                  src={opt[1]}
+                                />
+                              }
+                              label={opt[0]}
+                              variant="Filled"
+                            />
+                          ))}
+                        </Box>
+                      </Box>
+                    </Paper>
+                  </Link>
+                </Grid>
+              ))}
+            </Grid>
+          </Box>
         </Box>
       </Container>
     </>
