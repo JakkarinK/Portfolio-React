@@ -16,11 +16,11 @@ import MenuIcon from "@mui/icons-material/Menu";
 
 const drawerWidth = 240;
 const listNav = [
-  ["/", "Profile"],
-  ["/skills", "Skills"],
-  ["/experiences", "Experiences"],
-  ["/educations", "Educations"],
-  ["/socials", "Socials"],
+  ["Portfolio-React/", "Profile"],
+  ["Portfolio-React/skills", "Skills"],
+  ["Portfolio-React/experiences", "Experiences"],
+  ["Portfolio-React/educations", "Educations"],
+  ["Portfolio-React/socials", "Socials"],
 ];
 
 const Appbar = () => {
