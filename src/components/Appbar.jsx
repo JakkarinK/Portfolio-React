@@ -91,7 +91,10 @@ const Appbar = () => {
               {listNav.map((menu) => (
                 <Link to={menu[0]}>
                   <ListItem
-                    sx={{transition:".2s ease", ":hover": { backgroundColor: "#caf0f8" } }}
+                    sx={{
+                      transition: ".2s ease",
+                      ":hover": { backgroundColor: "#caf0f8" },
+                    }}
                   >
                     <Typography variant="h5">{menu[1]}</Typography>
                   </ListItem>
