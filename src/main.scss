@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik" !important;
+}
+a {
+  text-decoration: none;
+}
+nav.appbar {
+  a {
+    padding: 2px 4px;
+    color: #b5e2fa;
+    &.nav-active {
+      color: #415a77;
+      font-weight: 700;
+    }
+  }
+}
+button {
+  padding: 0 !important;
+}
+
+.social-hover {
+  transition: 0.3s ease;
+  // background-color: #415a77 !important;
+  &:hover {
+    background-color: #415a77 !important;
+    svg {
+      color: #b5e2fa;
+    }
+    span {
+      color: #ffffff;
+    }
+  }
+}
+
+.exp-hover-custom {
+  transition: 0.3s ease !important;
+  &:hover {
+    background-color: #778da9 !important;
+    img{
+      box-shadow: 0 0 15px #b5e2fa !important;
+    }
+    h5 {
+      color: #fff;
+    }
+    p {
+      color: #fff;
+    }
+    .chip-custom {
+      background-color: #ffffff;
+    }
+  }
+}
