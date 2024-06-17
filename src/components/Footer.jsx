@@ -73,6 +73,7 @@ const Footer = () => {
         <Box display={"flex"} gap={1}>
           {socials.map((social) => (
             <Link
+            target="_blank"
               to={social[0]}
               style={{ display: "flex", padding: "2px", color: color }}
             >

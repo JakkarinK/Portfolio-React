@@ -24,7 +24,7 @@ const Socials = () => {
         >
           <Grid item xs={12} md={6}>
             <Paper elevation={5}>
-              <Link to={socialslink.facebook}>
+              <Link to={socialslink.facebook} target="_blank">
                 <Box
                   className="social-hover"
                   py={2}
@@ -44,7 +44,7 @@ const Socials = () => {
           </Grid>
           <Grid item xs={12} md={6}>
             <Paper elevation={5}>
-              <Link to={socialslink.linkedin}>
+              <Link to={socialslink.linkedin} target="_blank">
                 <Box
                   className="social-hover"
                   py={2}
@@ -64,7 +64,7 @@ const Socials = () => {
           </Grid>
           <Grid item xs={12} md={6}>
             <Paper elevation={5}>
-              <Link to={`mailto: ${socialslink.gmail}`}>
+              <Link to={`mailto: ${socialslink.gmail}`} target="_blank">
                 <Box
                   className="social-hover"
                   py={2}
@@ -84,7 +84,7 @@ const Socials = () => {
           </Grid>
           <Grid item xs={12} md={6}>
             <Paper elevation={5}>
-              <Link to={socialslink.github}>
+              <Link to={socialslink.github} target="_blank">
                 <Box
                   className="social-hover"
                   py={2}

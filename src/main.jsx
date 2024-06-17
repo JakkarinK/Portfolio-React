@@ -17,6 +17,10 @@ const router = createBrowserRouter([
     element: <View><Profile /></View>,
   },
   {
+    path: "Portfolio-React/profile",
+    element: <View><Profile /></View>,
+  },
+  {
     path: "Portfolio-React/skills",
     element: <View><Skills /></View>,
   },
