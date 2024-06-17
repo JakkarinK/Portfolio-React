@@ -13,23 +13,23 @@ import Socials from "./pages/Socials.jsx";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "Portfolio-React/",
     element: <View><Profile /></View>,
   },
   {
-    path: "/skills",
+    path: "Portfolio-React/skills",
     element: <View><Skills /></View>,
   },
   {
-    path: "/experiences",
+    path: "Portfolio-React/experiences",
     element: <View><Experiences /></View>,
   },
   {
-    path: "/educations",
+    path: "Portfolio-React/educations",
     element: <View><Educations /></View>,
   },
   {
-    path: "/socials",
+    path: "Portfolio-React/socials",
     element: <View><Socials /></View>,
   },
 ]);
