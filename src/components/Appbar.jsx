@@ -16,7 +16,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 
 const drawerWidth = 240;
 const listNav = [
-  ["../Portfolio-React/profile", "Profile"],
+  ["../Portfolio-React/", "Profile"],
   ["../Portfolio-React/skills", "Skills"],
   ["../Portfolio-React/experiences", "Experiences"],
   ["../Portfolio-React/educations", "Educations"],
@@ -47,6 +47,7 @@ const Appbar = () => {
                     className={({ isActive }) =>
                       isActive ? activeClassName : undefined
                     }
+                    end
                   >
                     {menu[1]}
                   </NavLink>
