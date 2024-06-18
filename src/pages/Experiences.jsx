@@ -16,6 +16,7 @@ import MainboardReact from "../assets/img/exp/mainboard-react.png";
 import MB_React from "../assets/img/exp/mainboard-react.png";
 import Coffee from "../assets/img/exp/coffee-style.png";
 import Chillaid from "../assets/img/exp/chillaid.png";
+import Furni from "../assets/img/exp/furni.png";
 import { Link } from "react-router-dom";
 
 //Icon
@@ -33,7 +34,7 @@ const Experiences = () => {
     {
       title: "Bangkok Web Solution Co.,Ltd.",
       date: "8 Jan 2024 - 4 May 2024",
-      subtitle: "Front End Developer",
+      subtitle: "Front End Developer[Internship]",
       img: Chillaid,
       option: [
         ["HTML", HTML],
@@ -83,7 +84,23 @@ const Experiences = () => {
         ["HTML", HTML],
         ["CSS", CSS],
         ["JavaScript", JavaScript],
+        ["SCSS", SCSS],
         ["MUI", MUI],
+        ["ReactJS", ReactJS],
+      ],
+    },
+    {
+      website: "https://jakkarink.github.io/react-furni-ecom/",
+      title: "Furni Ecommerce(ReactJS)[Coding...]",
+      subtitle:
+        "Web Appication template from Themewagon, Create for learning and practice BootStrap5 framework",
+      img: Furni,
+      option: [
+        ["HTML", HTML],
+        ["CSS", CSS],
+        ["JavaScript", JavaScript],
+        ["SCSS", SCSS],
+        ["BootStrap5", BootStrap5],
         ["ReactJS", ReactJS],
       ],
     },
@@ -160,7 +177,7 @@ const Experiences = () => {
                     <Paper
                       className="exp-hover-custom"
                       elevation={2}
-                      sx={{ p: 2 }}
+                      sx={{ p: 2, height: "100%" }}
                     >
                       <img
                         src={data.img}
