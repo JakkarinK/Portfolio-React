@@ -1,14 +1,16 @@
-import { Box, Container, List, Typography } from "@mui/material";
-import React from "react";
 import { Link } from "react-router-dom";
 
+// asset
+import Resume from "../assets/resume/Resume_JakkarinK.pdf";
+
+// mui
+import { Box, Container, Typography } from "@mui/material";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import DownloadIcon from "@mui/icons-material/Download";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import Resume from "../assets/resume/Resume_JakkarinK.pdf";
 
 const Footer = () => {
   const bgcolor = "#1B263B";
@@ -66,18 +68,22 @@ const Footer = () => {
           >
             <LocalPhoneIcon />
             <Typography variant="subtitle1" color={color}>
-              (+66)86-0000943
+              (+66)98-555-4214
             </Typography>
           </Box>
         </Box>
         <Box display={"flex"} gap={1}>
           {socials.map((social) => (
             <Link
-            target="_blank"
+              target="_blank"
               to={social[0]}
               style={{ display: "flex", padding: "2px", color: color }}
             >
-              <Box sx={{transition:".1s ease", ":hover": { color: social[2] } }}>{social[1]}</Box>
+              <Box
+                sx={{ transition: ".1s ease", ":hover": { color: social[2] } }}
+              >
+                {social[1]}
+              </Box>
             </Link>
           ))}
         </Box>

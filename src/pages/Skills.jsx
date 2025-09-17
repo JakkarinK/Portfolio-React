@@ -1,5 +1,4 @@
 import { Avatar, Box, Chip, Container, Typography } from "@mui/material";
-import React from "react";
 
 //Icon
 import HTML from "../assets/img/icon/HTML.svg";
@@ -14,11 +13,16 @@ import MySQL from "../assets/img/icon/MySQL.svg";
 import PHP from "../assets/img/icon/PHP.svg";
 import Dart from "../assets/img/icon/Dart.svg";
 import SCSS from "../assets/img/icon/SCSS.svg";
+import TypeScript from "../assets/img/icon/typescript.svg";
+import PrimeFlex from "../assets/img/icon/primeflex.png";
+import PrimeReact from "../assets/img/icon/primereact.svg";
+import FluentUI from "../assets/img/icon/fluentui.svg";
 
 const Skills = () => {
   const p_Lang = [
     ["HTML", HTML],
     ["JavaScript", JavaScript],
+    ["TypeScript", TypeScript],
     ["CSS", CSS],
     ["SCSS", SCSS],
     ["PHP", PHP],
@@ -29,6 +33,9 @@ const Skills = () => {
     ["BootStrap5", BootStrap5],
     ["MUI", MUI],
     ["Taiwind", Taiwind],
+    ["PrimeFlex", PrimeFlex],
+    ["PrimeReact", PrimeReact],
+    ["FluentUI", FluentUI],
   ];
   const db_Lang = [
     ["MongoDB", MongoDB],
@@ -43,7 +50,7 @@ const Skills = () => {
             display={"flex"}
             flexDirection={"column"}
             justifyContent={"center"}
-            sx={{pt:{xs:"1rem ",md:"3rem"}}}
+            sx={{ pt: { xs: "1rem ", md: "3rem" } }}
           >
             <Box mb={5}>
               <Typography variant="h2" mb={2}>

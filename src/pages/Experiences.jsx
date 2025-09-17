@@ -7,10 +7,7 @@ import {
   Grid,
   Paper,
   Typography,
-  styled,
 } from "@mui/material";
-import React from "react";
-import MainboardReact from "../assets/img/exp/mainboard-react.png";
 
 //Experiences image
 import MB_React from "../assets/img/exp/mainboard-react.png";
@@ -28,9 +25,31 @@ import ReactJS from "../assets/img/icon/ReactJS.svg";
 import SCSS from "../assets/img/icon/SCSS.svg";
 import BootStrap5 from "../assets/img/icon/BootStrap5.svg";
 import PHP from "../assets/img/icon/PHP.svg";
+import TypeScript from "../assets/img/icon/typescript.svg";
+import PrimeFlex from "../assets/img/icon/primeflex.png";
+import Taiwind from "../assets/img/icon/tailwind.svg";
+import PrimeReact from "../assets/img/icon/primereact.svg";
+import FluentUI from "../assets/img/icon/fluentui.svg";
 
 const Experiences = () => {
   const workList = [
+    {
+      title: "Lexnetix (CTI)",
+      date: "10 Jul 2024 - Present",
+      subtitle: "Front End Developer",
+      img: Chillaid,
+      option: [
+        ["HTML", HTML],
+        ["CSS", CSS],
+        ["JavaScript", JavaScript],
+        ["TypeScript", TypeScript],
+        ["SCSS", SCSS],
+        ["PrimeFlex", PrimeFlex],
+        ["Taiwind", Taiwind],
+        ["PrimeReact", PrimeReact],
+        ["FluentUI", FluentUI],
+      ],
+    },
     {
       title: "Bangkok Web Solution Co.,Ltd.",
       date: "8 Jan 2024 - 4 May 2024",
@@ -118,7 +137,7 @@ const Experiences = () => {
                   <Chip label="WORK EXPERIENCES" size="medium" />
                 </Divider>
               </Grid>
-              <Grid item xs={12}>
+              <Grid item xs={12} display={"flex"} flexDirection={"column"} gap={2}>
                 {workList.reverse().map((data) => (
                   <Paper elevation={2} sx={{ p: 2 }}>
                     <Box>
