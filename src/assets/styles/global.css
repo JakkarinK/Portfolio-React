@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+:root {
+  --text-color: #333333;
+  --text-color-secondary: #6c757d;
+  --primary-color: #2563eb;
+  --primary-color-text: #ffffff;
+  --font-family: "Inter", sans-serif;
+  --inline-spacing: 0.5rem;
+  --border-radius: 6px;
+  --focus-ring: 0 0 0 2px #2563eb33;
+  --mask-bg: rgba(0, 0, 0, 0.4);
+  --highlight-bg: #eff6ff;
+  --highlight-text-color: #1d4ed8;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
