@@ -1,20 +1,15 @@
-## Portfolio
+# Portfolio
 
-เก็บรวมรวมประวัติการทำงานและประสบการณ์ทำงาน
+A responsive portfolio and resume for Jakkarin Kerdthaidee, built with React,
+TypeScript, and Vite. Separate pages present the professional profile,
+strengths, skills, experience, projects, education, and contact information.
 
-## โครงสร้างโปรเจค
+## Development
 
-สร้างโดยการใช้ React + Vite
+```sh
+yarn
+yarn dev
+```
 
-ใช้ framework หลักๆ คือ
-
-- React-router => ใช้ในการควบคุม path และหน้า url
-- PrimeReact => ใช้เป็น UI Framework หลักในการแสดง UI ต่างๆ
-- Tailwind => ใช้ในการจัดการ CSS แบบ Inline
-
-## Tools & Packages
-
-- SurveyJS (Coming soon)
-- DND Kit (Coming soon)
-- React-Hook-Form (Coming soon)
-- EJ2 (Coming soon)
+Run the production type check and build with `yarn build`, or check code style
+with `yarn lint`.

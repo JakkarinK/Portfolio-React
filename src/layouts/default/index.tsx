@@ -4,11 +4,11 @@ import LayoutHeader from "./components/header";
 
 const LayoutDefault = () => {
   return (
-    <div className="h-screen w-screen overflow-auto grid grid-rows-[60px_1fr_80px]">
+    <div className="portfolio-layout">
       <LayoutHeader />
-      <div className="w-full h-full bg-(--surface-0)">
+      <main className="page-content">
         <Outlet />
-      </div>
+      </main>
       <LayoutFooter />
     </div>
   );

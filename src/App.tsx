@@ -1,28 +1,24 @@
 import { createBrowserRouter, Navigate, RouterProvider } from "react-router";
 
-// layouts
 import LayoutDefault from "./layouts/default";
-
-// pages
-import Homepage from "./pages/homepage/index";
+import Educations from "./pages/educations";
+import Experiences from "./pages/experiences";
+import Homepage from "./pages/homepage";
+import Skills from "./pages/skills";
+import Socials from "./pages/socials";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <LayoutDefault />,
     children: [
-      {
-        index: true,
-        element: <Homepage />,
-      },
-      {
-        path: "home",
-        element: <Homepage />,
-      },
-      {
-        path: "*",
-        element: <Navigate to="/" replace />,
-      },
+      { index: true, element: <Homepage /> },
+      { path: "profile", element: <Homepage /> },
+      { path: "skills", element: <Skills /> },
+      { path: "experiences", element: <Experiences /> },
+      { path: "educations", element: <Educations /> },
+      { path: "socials", element: <Socials /> },
+      { path: "*", element: <Navigate to="/" replace /> },
     ],
   },
 ]);
