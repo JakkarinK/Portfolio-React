@@ -1,6 +1,6 @@
-import Contact from "../../components/Contact";
-import ProfileCarousel from "../../components/ProfileCarousel";
-import ResumeDownloads from "../../components/ResumeDownloads";
+import Contact from "../../components/contact";
+import ProfileCarousel from "../../components/profileCarousel";
+import ResumeDownloads from "../../components/resumeDownloads";
 import { useTranslation } from "react-i18next";
 
 const Homepage = () => {

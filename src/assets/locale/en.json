@@ -15,11 +15,11 @@
     "main": "Main navigation"
   },
   "home": {
-    "name": "Hello, my name is Jakkarin Kerdthaidee.",
+    "name": "Hello, I'm Jakkarin Kerdthaidee.",
     "nickname": "You can call me Earth.",
-    "summary": "Front-end Developer with 2+ years of experience in ReactJS and NextJS.",
-    "collaboration": "Experienced in project coordination, technical problem-solving, and cross-functional collaboration.",
-    "currentRole": "Currently contributing to legal and PDPA-related applications at Lexnetix.",
+    "summary": "I'm a front-end developer with 2+ years of experience building modern web applications with ReactJS and Next.js.",
+    "collaboration": "I enjoy turning complex requirements into clear, reliable experiences and working across teams to deliver projects effectively.",
+    "currentRole": "At Lexnetix, I build and improve applications for legal and PDPA-related workflows.",
     "strengths": "Strengths",
     "strengthItems": [
       "Problem Solving & Analytical Thinking",

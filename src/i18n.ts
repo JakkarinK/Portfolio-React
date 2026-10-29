@@ -32,20 +32,13 @@ void i18n.use(initReactI18next).init({
 });
 
 i18n.on("languageChanged", (language) => {
-  const selectedLanguage: SupportedLanguage =
-    language === "th" ? "th" : "en";
+  const selectedLanguage: SupportedLanguage = language === "th" ? "th" : "en";
   localStorage.setItem("portfolio-language", selectedLanguage);
   document.documentElement.lang = selectedLanguage;
-  document.title =
-    selectedLanguage === "th"
-      ? "จักรินทร์ เกิดไธสง | พอร์ตโฟลิโอ"
-      : "Jakkarin Kerdthaidee | Portfolio";
+  document.title = "Jakkarin Kerdthaidee | Portfolio";
 });
 
 document.documentElement.lang = initialLanguage;
-document.title =
-  initialLanguage === "th"
-    ? "จักรินทร์ เกิดไธสง | พอร์ตโฟลิโอ"
-    : "Jakkarin Kerdthaidee | Portfolio";
+document.title = "Jakkarin Kerdthaidee | Portfolio";
 
 export default i18n;

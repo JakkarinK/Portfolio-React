@@ -3,7 +3,7 @@ import { createBrowserRouter, Navigate, RouterProvider } from "react-router";
 import LayoutDefault from "./layouts/default";
 import Educations from "./pages/educations";
 import Experiences from "./pages/experiences";
-import Homepage from "./pages/homepage";
+import Homepage from "./pages/home-page";
 import Skills from "./pages/skills";
 import Socials from "./pages/socials";
 

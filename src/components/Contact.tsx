@@ -1,5 +1,5 @@
-import EmailIcon from "../assets/img/icon/gmail-icon.svg";
-import LinkedInIcon from "../assets/img/icon/linkedin-icon.svg";
+import EmailIcon from "../assets/images/icons/gmailIcon.svg";
+import LinkedInIcon from "../assets/images/icons/linkedInIcon.svg";
 import { useTranslation } from "react-i18next";
 
 const Contact = () => {

@@ -1,5 +1,5 @@
-import EnglishPortfolio from "../assets/resume/Portfolio_EN.pdf";
-import ThaiPortfolio from "../assets/resume/Portfolio_TH.pdf";
+import EnglishPortfolio from "../assets/resume/portfolioEn.pdf";
+import ThaiPortfolio from "../assets/resume/portfolioTh.pdf";
 import { useTranslation } from "react-i18next";
 
 const ResumeDownloads = () => {
@@ -13,14 +13,14 @@ const ResumeDownloads = () => {
     >
       <a
         className="resume-choice"
-        download="Portfolio_EN.pdf"
+        download="portfolioEn.pdf"
         href={EnglishPortfolio}
       >
         {t("resume.english")}
       </a>
       <a
         className="resume-choice"
-        download="Portfolio_TH.pdf"
+        download="portfolioTh.pdf"
         href={ThaiPortfolio}
       >
         {t("resume.thai")}

@@ -1,20 +1,6 @@
-import ResumeDownloads from "../../../../components/ResumeDownloads";
-import EmailIcon from "../../../../assets/img/icon/gmail-icon.svg";
-import LinkedInIcon from "../../../../assets/img/icon/linkedin-icon.svg";
+import ResumeDownloads from "../../../../components/resumeDownloads";
+import { socialLinks } from "../../../../data/socialLinks";
 import { useTranslation } from "react-i18next";
-
-const socialLinks = [
-  {
-    href: "https://www.linkedin.com/in/JakkarinK",
-    translationKey: "socials.linkedin",
-    icon: LinkedInIcon,
-  },
-  {
-    href: "mailto:earth1277@gmail.com",
-    translationKey: "socials.email",
-    icon: EmailIcon,
-  },
-] as const;
 
 const LayoutFooter = () => {
   const { t } = useTranslation();
@@ -27,7 +13,7 @@ const LayoutFooter = () => {
           <a href="tel:+66985554214">098-555-4214</a>
         </div>
         <nav aria-label={t("socials.links")} className="footer-socials">
-          {socialLinks.map(({ href, translationKey, icon }) => {
+          {socialLinks.map(({ href, translationKey, icon, opensInNewTab }) => {
             const label = t(translationKey);
 
             return (
@@ -36,7 +22,7 @@ const LayoutFooter = () => {
               href={href}
               key={translationKey}
               rel="noreferrer"
-              target={translationKey === "socials.email" ? undefined : "_blank"}
+              target={opensInNewTab ? "_blank" : undefined}
             >
               <img alt="" src={icon} />
               {label}

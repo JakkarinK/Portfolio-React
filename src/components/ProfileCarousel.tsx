@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
-import P1 from "../assets/img/profile/p1.jpg";
-import P2 from "../assets/img/profile/p2.jpg";
-import P3 from "../assets/img/profile/p3.jpg";
-import P4 from "../assets/img/profile/p4.png";
+import P1 from "../assets/images/profile/p1.jpg";
+import P2 from "../assets/images/profile/p2.jpg";
+import P3 from "../assets/images/profile/p3.jpg";
+import P4 from "../assets/images/profile/p4.png";
 
 const photos = [P1, P2, P3, P4];
 

@@ -8,6 +8,12 @@ in the browser. Locale resources live in `src/assets/locale`.
 Separate pages present the professional profile, strengths, skills, experience,
 projects, education, and contact information.
 
+## Naming conventions
+
+Use kebab-case for multiword folder names and camelCase for source and asset
+filenames. Keep tool-required filenames and locale-code filenames such as
+`package.json`, `index.html`, `en.json`, and `th.json` unchanged.
+
 ## Development
 
 ```sh

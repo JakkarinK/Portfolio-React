@@ -1,5 +1,5 @@
-import TU from "../../assets/img/campus/tu.png";
-import SKR from "../../assets/img/campus/skr.png";
+import TU from "../../assets/images/campus/tu.png";
+import SKR from "../../assets/images/campus/skr.png";
 import { useTranslation } from "react-i18next";
 
 type EducationTranslationKey = "university" | "school";

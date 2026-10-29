@@ -1,25 +1,25 @@
-import type { Technology } from "../../components/TechnologyList";
-import TechnologyList from "../../components/TechnologyList";
+import type { Technology } from "../../components/technologyList";
+import TechnologyList from "../../components/technologyList";
 
-import Bootstrap from "../../assets/img/icon/BootStrap5.svg";
-import Claude from "../../assets/img/icon/Claude.svg";
-import CSS from "../../assets/img/icon/CSS.svg";
-import DnDKit from "../../assets/img/icon/DnDKit.svg";
-import FluentUI from "../../assets/img/icon/fluentui.svg";
-import Git from "../../assets/img/icon/Git.svg";
-import GitLab from "../../assets/img/icon/GitLab.svg";
-import HTML from "../../assets/img/icon/HTML.svg";
-import JavaScript from "../../assets/img/icon/JavaScript.svg";
-import NextJS from "../../assets/img/icon/NextJS.svg";
-import PrimeFlex from "../../assets/img/icon/primeflex.png";
-import PrimeReact from "../../assets/img/icon/primereact.svg";
-import ReactJS from "../../assets/img/icon/ReactJS.svg";
-import SCSS from "../../assets/img/icon/SCSS.svg";
-import SourceTree from "../../assets/img/icon/SourceTree.svg";
-import SurveyJS from "../../assets/img/icon/SurveyJS.svg";
-import Syncfusion from "../../assets/img/icon/Syncfusion.svg";
-import Tailwind from "../../assets/img/icon/Taiwind.svg";
-import TypeScript from "../../assets/img/icon/typescript.svg";
+import Bootstrap from "../../assets/images/icons/bootstrap5.svg";
+import Claude from "../../assets/images/icons/claude.svg";
+import CSS from "../../assets/images/icons/css.svg";
+import DnDKit from "../../assets/images/icons/dndKit.svg";
+import FluentUI from "../../assets/images/icons/fluentui.svg";
+import Git from "../../assets/images/icons/git.svg";
+import GitLab from "../../assets/images/icons/gitLab.svg";
+import HTML from "../../assets/images/icons/html.svg";
+import JavaScript from "../../assets/images/icons/javascript.svg";
+import NextJS from "../../assets/images/icons/nextJs.svg";
+import PrimeFlex from "../../assets/images/icons/primeFlex.png";
+import PrimeReact from "../../assets/images/icons/primereact.svg";
+import ReactJS from "../../assets/images/icons/reactJs.svg";
+import SCSS from "../../assets/images/icons/scss.svg";
+import SourceTree from "../../assets/images/icons/sourceTree.svg";
+import SurveyJS from "../../assets/images/icons/surveyJs.svg";
+import Syncfusion from "../../assets/images/icons/syncfusion.svg";
+import Tailwind from "../../assets/images/icons/tailwind.svg";
+import TypeScript from "../../assets/images/icons/typescript.svg";
 import { useTranslation } from "react-i18next";
 
 const skillGroups = [

@@ -1,24 +1,24 @@
 import { useTranslation } from "react-i18next";
 
-import Chillaid from "../../assets/img/exp/chillaid.png";
-import Coffee from "../../assets/img/exp/coffee-style.png";
-import DnDKit from "../../assets/img/exp/DnDKit.png";
-import Dashboard from "../../assets/img/exp/mainboard-react.png";
-import EJ2 from "../../assets/img/exp/EJ2.png";
-import SurveyJS from "../../assets/img/exp/SurveyJS.png";
-import Furni from "../../assets/img/exp/furni.png";
-import Bootstrap from "../../assets/img/icon/BootStrap5.svg";
-import CSS from "../../assets/img/icon/CSS.svg";
-import FluentUI from "../../assets/img/icon/fluentui.svg";
-import HTML from "../../assets/img/icon/HTML.svg";
-import JavaScript from "../../assets/img/icon/JavaScript.svg";
-import PrimeFlex from "../../assets/img/icon/primeflex.png";
-import PrimeReact from "../../assets/img/icon/primereact.svg";
-import ReactJS from "../../assets/img/icon/ReactJS.svg";
-import Tailwind from "../../assets/img/icon/tailwind.svg";
-import TypeScript from "../../assets/img/icon/typescript.svg";
-import type { Technology } from "../../components/TechnologyList";
-import TechnologyList from "../../components/TechnologyList";
+import Chillaid from "../../assets/images/projects/chillaid.png";
+import Coffee from "../../assets/images/projects/coffeeStyle.png";
+import DnDKit from "../../assets/images/projects/dndKit.png";
+import Dashboard from "../../assets/images/projects/mainboardReact.png";
+import EJ2 from "../../assets/images/projects/ej2.png";
+import SurveyJS from "../../assets/images/projects/surveyJs.png";
+import Furni from "../../assets/images/projects/furni.png";
+import Bootstrap from "../../assets/images/icons/bootstrap5.svg";
+import CSS from "../../assets/images/icons/css.svg";
+import FluentUI from "../../assets/images/icons/fluentui.svg";
+import HTML from "../../assets/images/icons/html.svg";
+import JavaScript from "../../assets/images/icons/javascript.svg";
+import PrimeFlex from "../../assets/images/icons/primeFlex.png";
+import PrimeReact from "../../assets/images/icons/primereact.svg";
+import ReactJS from "../../assets/images/icons/reactJs.svg";
+import Tailwind from "../../assets/images/icons/tailwind.svg";
+import TypeScript from "../../assets/images/icons/typescript.svg";
+import type { Technology } from "../../components/technologyList";
+import TechnologyList from "../../components/technologyList";
 
 type Project = {
   date?: string;
