@@ -27,7 +27,9 @@ const Educations = () => {
 
           return (
             <article className="education-card" key={translationKey}>
-              <img alt={t("education.logoAlt", { title })} src={cover} />
+              <div className="education-logo">
+                <img alt={t("education.logoAlt", { title })} src={cover} />
+              </div>
               <div>
                 <h3>{title}</h3>
                 <p className="education-date">

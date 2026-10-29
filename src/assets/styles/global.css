@@ -449,6 +449,46 @@ img {
   padding: 1.2rem;
 }
 
+.work-card-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.work-card-heading h2 {
+  margin: 0;
+  color: var(--slate);
+}
+
+.certificate-button {
+  flex: 0 0 auto;
+  padding: 0.45rem 0.75rem;
+  border: 1px solid var(--slate);
+  border-radius: 6px;
+  color: var(--slate);
+  background: transparent;
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.certificate-button:disabled {
+  border-color: #778da980;
+  color: #52657b;
+  background: #e8eef4;
+  cursor: not-allowed;
+}
+
+.certificate-button:not(:disabled) {
+  cursor: pointer;
+}
+
+.certificate-button:not(:disabled):hover {
+  color: #fff;
+  background: var(--slate);
+}
+
 .work-card h3,
 .project-card h3,
 .education-card h3 {
@@ -558,10 +598,21 @@ img {
   padding: 1.25rem;
 }
 
-.education-card > img {
+.education-logo {
+  display: grid;
   width: 96px;
   height: 96px;
   flex: 0 0 96px;
+  place-items: center;
+  overflow: hidden;
+  border: 1px solid #778da933;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.education-logo img {
+  width: 82px;
+  height: 82px;
   object-fit: contain;
 }
 

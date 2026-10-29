@@ -63,6 +63,8 @@
     "projectsTitle": "PROJECTS",
     "projectPreview": "{{title}} project preview",
     "openProject": "Open {{title}} project",
+    "viewCertificate": "View Certificate",
+    "certificateComingSoon": "Certificate PDF will be added soon.",
     "lexnetix": {
       "date": "Jul 2024 - Dec 2026 (2+ Years)",
       "role": "Front-end Developer",

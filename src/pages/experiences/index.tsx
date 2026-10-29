@@ -12,9 +12,15 @@ import CSS from "../../assets/images/icons/css.svg";
 import FluentUI from "../../assets/images/icons/fluentui.svg";
 import HTML from "../../assets/images/icons/html.svg";
 import JavaScript from "../../assets/images/icons/javascript.svg";
+import MUI from "../../assets/images/icons/mui.svg";
+import NextJS from "../../assets/images/icons/nextJs.svg";
 import PrimeFlex from "../../assets/images/icons/primeFlex.png";
 import PrimeReact from "../../assets/images/icons/primereact.svg";
 import ReactJS from "../../assets/images/icons/reactJs.svg";
+import SCSS from "../../assets/images/icons/scss.svg";
+import DnDKitIcon from "../../assets/images/icons/dndKit.svg";
+import SurveyJSIcon from "../../assets/images/icons/surveyJs.svg";
+import Syncfusion from "../../assets/images/icons/syncfusion.svg";
 import Tailwind from "../../assets/images/icons/tailwind.svg";
 import TypeScript from "../../assets/images/icons/typescript.svg";
 import type { Technology } from "../../components/technologyList";
@@ -30,13 +36,20 @@ type Project = {
   organization?: string;
 };
 
+type WorkExperience = {
+  key: "lexnetix" | "bangkok";
+  title: string;
+  technologies: Technology[];
+  certificateUrl?: string;
+};
+
 const lexnetixTechnologies: Technology[] = [
   { name: "HTML", icon: HTML },
   { name: "CSS", icon: CSS },
   { name: "JavaScript", icon: JavaScript },
   { name: "TypeScript", icon: TypeScript },
   { name: "ReactJS", icon: ReactJS },
-  { name: "NextJS" },
+  { name: "NextJS", icon: NextJS },
   { name: "Tailwind CSS", icon: Tailwind },
   { name: "PrimeReact", icon: PrimeReact },
   { name: "PrimeFlex", icon: PrimeFlex },
@@ -59,7 +72,7 @@ const lexnetixProjects: {
     key: "documentEditor",
     image: EJ2,
     technologies: [
-      { name: "Syncfusion EJ2" },
+      { name: "Syncfusion EJ2", icon: Syncfusion },
       { name: "Fluent UI", icon: FluentUI },
       { name: "Tailwind CSS", icon: Tailwind },
       { name: "ReactJS", icon: ReactJS },
@@ -69,7 +82,7 @@ const lexnetixProjects: {
     key: "dndAssessment",
     image: DnDKit,
     technologies: [
-      { name: "DnD Kit" },
+      { name: "DnD Kit", icon: DnDKitIcon },
       { name: "Fluent UI", icon: FluentUI },
       { name: "Tailwind CSS", icon: Tailwind },
       { name: "ReactJS", icon: ReactJS },
@@ -79,7 +92,7 @@ const lexnetixProjects: {
     key: "surveyAssessment",
     image: SurveyJS,
     technologies: [
-      { name: "SurveyJS" },
+      { name: "SurveyJS", icon: SurveyJSIcon },
       { name: "PrimeReact", icon: PrimeReact },
       { name: "PrimeFlex", icon: PrimeFlex },
       { name: "ReactJS", icon: ReactJS },
@@ -90,7 +103,7 @@ const lexnetixProjects: {
 const Experiences = () => {
   const { t } = useTranslation();
 
-  const experiences = [
+  const experiences: WorkExperience[] = [
     {
       key: "lexnetix",
       title: "LEXNETIX",
@@ -120,7 +133,7 @@ const Experiences = () => {
         { name: "HTML", icon: HTML },
         { name: "CSS", icon: CSS },
         { name: "JavaScript", icon: JavaScript },
-        { name: "SCSS" },
+        { name: "SCSS", icon: SCSS },
         { name: "Bootstrap", icon: Bootstrap },
         { name: "ReactJS", icon: ReactJS },
       ],
@@ -134,8 +147,8 @@ const Experiences = () => {
         { name: "HTML", icon: HTML },
         { name: "CSS", icon: CSS },
         { name: "JavaScript", icon: JavaScript },
-        { name: "SCSS" },
-        { name: "MUI" },
+        { name: "SCSS", icon: SCSS },
+        { name: "MUI", icon: MUI },
         { name: "ReactJS", icon: ReactJS },
       ],
     },
@@ -148,7 +161,7 @@ const Experiences = () => {
         { name: "HTML", icon: HTML },
         { name: "CSS", icon: CSS },
         { name: "JavaScript", icon: JavaScript },
-        { name: "SCSS" },
+        { name: "SCSS", icon: SCSS },
         { name: "ReactJS", icon: ReactJS },
       ],
     },
@@ -161,7 +174,7 @@ const Experiences = () => {
         { name: "HTML", icon: HTML },
         { name: "CSS", icon: CSS },
         { name: "JavaScript", icon: JavaScript },
-        { name: "SCSS" },
+        { name: "SCSS", icon: SCSS },
         { name: "ReactJS", icon: ReactJS },
       ],
     },
@@ -172,7 +185,7 @@ const Experiences = () => {
       <section className="experience-section">
         <h1 className="divider-title">{t("experience.workTitle")}</h1>
         <div className="work-list">
-          {experiences.map(({ key, title, technologies }) => {
+          {experiences.map(({ key, title, technologies, certificateUrl }) => {
             const details =
               key === "lexnetix"
                 ? t("experience.lexnetix.details", { returnObjects: true })
@@ -180,7 +193,29 @@ const Experiences = () => {
 
             return (
               <article className="work-card" key={key}>
-                <h2>{title}</h2>
+                <div className="work-card-heading">
+                  <h2>{title}</h2>
+                  {key === "lexnetix" &&
+                    (certificateUrl ? (
+                      <a
+                        className="certificate-button"
+                        href={certificateUrl}
+                        rel="noreferrer"
+                        target="_blank"
+                      >
+                        {t("experience.viewCertificate")}
+                      </a>
+                    ) : (
+                      <button
+                        className="certificate-button"
+                        disabled
+                        title={t("experience.certificateComingSoon")}
+                        type="button"
+                      >
+                        {t("experience.viewCertificate")}
+                      </button>
+                    ))}
+                </div>
                 <p className="work-date">{t(`experience.${key}.date`)}</p>
                 <p>{t(`experience.${key}.role`)}</p>
                 <ul className="experience-details">
