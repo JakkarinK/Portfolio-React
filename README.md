@@ -23,3 +23,18 @@ yarn dev
 
 Run the production type check and build with `yarn build`, or check code style
 with `yarn lint`.
+
+## Deployment
+
+The site is configured for the `JakkarinK/Portfolio-React` repository and is
+available at <https://jakkarink.github.io/Portfolio-React/> after deployment.
+Deploy with:
+
+```sh
+yarn deploy
+```
+
+This builds the site and publishes `dist` to the `gh-pages` branch. In the
+repository's GitHub Pages settings, select the `gh-pages` branch and its root
+directory as the deployment source. The build also creates a `404.html` copy
+so direct visits to client-side routes can load the app.
