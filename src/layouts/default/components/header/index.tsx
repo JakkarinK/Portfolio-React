@@ -1,16 +1,18 @@
 import { useState } from "react";
 import { NavLink } from "react-router";
+import { useTranslation } from "react-i18next";
 
 const navigation = [
-  { to: "/", label: "Profile", end: true },
-  { to: "/skills", label: "Skills" },
-  { to: "/experiences", label: "Experiences" },
-  { to: "/educations", label: "Educations" },
-  { to: "/socials", label: "Socials" },
-];
+  { to: "/", label: "navigation.profile", end: true },
+  { to: "/skills", label: "navigation.skills" },
+  { to: "/experiences", label: "navigation.experiences" },
+  { to: "/educations", label: "navigation.educations" },
+  { to: "/socials", label: "navigation.socials" },
+] as const;
 
 const LayoutHeader = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const { t, i18n } = useTranslation();
 
   return (
     <header className="site-header">
@@ -18,9 +20,40 @@ const LayoutHeader = () => {
         <NavLink className="site-title" to="/">
           PORTFOLIO
         </NavLink>
+        <nav
+          aria-label={t("navigation.main")}
+          className={`site-navigation${menuOpen ? " is-open" : ""}`}
+        >
+          {navigation.map(({ to, label }) => (
+            <NavLink
+              end={to === "/"}
+              key={label}
+              onClick={() => setMenuOpen(false)}
+              to={to}
+            >
+              {t(label)}
+            </NavLink>
+          ))}
+        </nav>
+        <div aria-label={t("language.label")} className="language-switch">
+          <button
+            aria-pressed={i18n.resolvedLanguage === "en"}
+            onClick={() => void i18n.changeLanguage("en")}
+            type="button"
+          >
+            EN
+          </button>
+          <button
+            aria-pressed={i18n.resolvedLanguage === "th"}
+            onClick={() => void i18n.changeLanguage("th")}
+            type="button"
+          >
+            TH
+          </button>
+        </div>
         <button
           aria-expanded={menuOpen}
-          aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
+          aria-label={t(menuOpen ? "navigation.closeMenu" : "navigation.openMenu")}
           className="menu-toggle"
           onClick={() => setMenuOpen((isOpen) => !isOpen)}
           type="button"
@@ -29,21 +62,6 @@ const LayoutHeader = () => {
           <span />
           <span />
         </button>
-        <nav
-          aria-label="Main navigation"
-          className={`site-navigation${menuOpen ? " is-open" : ""}`}
-        >
-          {navigation.map(({ to, label, end }) => (
-            <NavLink
-              end={end}
-              key={label}
-              onClick={() => setMenuOpen(false)}
-              to={to}
-            >
-              {label}
-            </NavLink>
-          ))}
-        </nav>
       </div>
     </header>
   );

@@ -1,40 +1,47 @@
 import TU from "../../assets/img/campus/tu.png";
 import SKR from "../../assets/img/campus/skr.png";
+import { useTranslation } from "react-i18next";
 
-const education = [
+type EducationTranslationKey = "university" | "school";
+
+const education: { cover: string; translationKey: EducationTranslationKey }[] = [
   {
     cover: TU,
-    title: "Thammasat University (Bachelor's degree)",
-    date: "2020 - 2024",
-    program: "Bachelor's degree in Software Engineering",
-    location: "Pathum Thani, Thailand",
+    translationKey: "university",
   },
   {
     cover: SKR,
-    title: "Suankularb Witayalai Rangsit",
-    date: "2014 - 2020",
-    program: "Science and Mathematics",
-    location: "Pathum Thani, 12120",
+    translationKey: "school",
   },
 ];
 
-const Educations = () => (
-  <div className="page-container">
-    <h1 className="section-title">Education</h1>
-    <div className="education-grid">
-      {education.map(({ cover, title, date, program, location }) => (
-        <article className="education-card" key={title}>
-          <img alt={`${title} logo`} src={cover} />
-          <div>
-            <h3>{title}</h3>
-            <p className="education-date">{date}</p>
-            <p>{program}</p>
-            <p>{location}</p>
-          </div>
-        </article>
-      ))}
+const Educations = () => {
+  const { t } = useTranslation();
+
+  return (
+    <div className="page-container">
+      <h1 className="section-title">{t("education.title")}</h1>
+      <div className="education-grid">
+        {education.map(({ cover, translationKey }) => {
+          const title = t(`education.${translationKey}.title`);
+
+          return (
+            <article className="education-card" key={translationKey}>
+              <img alt={t("education.logoAlt", { title })} src={cover} />
+              <div>
+                <h3>{title}</h3>
+                <p className="education-date">
+                  {t(`education.${translationKey}.date`)}
+                </p>
+                <p>{t(`education.${translationKey}.program`)}</p>
+                <p>{t(`education.${translationKey}.location`)}</p>
+              </div>
+            </article>
+          );
+        })}
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default Educations;

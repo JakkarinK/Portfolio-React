@@ -1,0 +1,143 @@
+{
+  "language": {
+    "label": "Language",
+    "english": "English",
+    "thai": "ไทย"
+  },
+  "navigation": {
+    "profile": "Profile",
+    "skills": "Skills",
+    "experiences": "Experiences",
+    "educations": "Education",
+    "socials": "Socials",
+    "openMenu": "Open navigation menu",
+    "closeMenu": "Close navigation menu",
+    "main": "Main navigation"
+  },
+  "home": {
+    "name": "Hello, my name is Jakkarin Kerdthaidee.",
+    "nickname": "You can call me Earth.",
+    "summary": "Front-end Developer with 2+ years of experience in ReactJS and NextJS.",
+    "collaboration": "Experienced in project coordination, technical problem-solving, and cross-functional collaboration.",
+    "currentRole": "Currently contributing to legal and PDPA-related applications at Lexnetix.",
+    "strengths": "Strengths",
+    "strengthItems": [
+      "Problem Solving & Analytical Thinking",
+      "Project Planning & Time Management",
+      "Cross-functional Collaboration",
+      "Adaptability & Fast Learner",
+      "Attention to Detail & Code Quality",
+      "Using AI to Improve Productivity"
+    ]
+  },
+  "resume": {
+    "download": "Download portfolio",
+    "english": "Portfolio (EN)",
+    "thai": "Portfolio (TH)"
+  },
+  "contact": {
+    "title": "CONTACTS",
+    "email": "Email",
+    "phone": "Phone",
+    "linkedin": "LinkedIn"
+  },
+  "carousel": {
+    "photos": "Profile photos",
+    "photoAlt": "Jakkarin Kerdthaidee, photo {{number}}",
+    "previous": "Previous photo",
+    "next": "Next photo",
+    "choose": "Choose a photo",
+    "show": "Show photo {{number}}"
+  },
+  "skills": {
+    "groups": {
+      "web": "Web Technologies",
+      "tools": "Tools & Utilities",
+      "languages": "Languages",
+      "other": "Other",
+      "frameworks": "Frameworks & Libraries"
+    }
+  },
+  "experience": {
+    "workTitle": "WORK EXPERIENCES",
+    "projectsTitle": "PROJECTS",
+    "projectPreview": "{{title}} project preview",
+    "openProject": "Open {{title}} project",
+    "lexnetix": {
+      "date": "Jul 2024 - Dec 2026 (2+ Years)",
+      "role": "Front-end Developer",
+      "details": [
+        "Took on increased project ownership, contributing to technical solutions and project execution for legal and PDPA-related applications.",
+        "Planned and coordinated development tasks for a two-person frontend team supporting five features over an eight-month roadmap.",
+        "Balanced feature development with bug fixes, technical support, and customer-specific customizations for legal and PDPA workflows.",
+        "Collaborated with design, backend, and QA teams to refine UI/UX, align API payloads, and identify potential bugs and testing gaps.",
+        "Used structured planning with Claude Code to support code implementation, merge request preparation, and cherry-pick workflows.",
+        "Analyzed technical issues and proposed solutions to improve development efficiency, code quality, and project delivery."
+      ]
+    },
+    "bangkok": {
+      "title": "Bangkok Web Solution",
+      "date": "May 2024 - Jul 2024 (4 Months)",
+      "role": "Front-end Developer Intern",
+      "details": [
+        "Developed responsive websites with HTML, CSS, and JavaScript.",
+        "Learned and applied best practices in front-end development."
+      ]
+    },
+    "lexnetixProject": "LEXNETIX PROJECT",
+    "documentEditor": {
+      "date": "Aug 2025 - Nov 2025",
+      "title": "Document Editor",
+      "description": "Developed UI components for a document editor system."
+    },
+    "dndAssessment": {
+      "date": "Jun 2025 - Apr 2025",
+      "title": "Creator Assessment (DnD Kit)",
+      "description": "Developed drag-and-drop UI components and reusable kits."
+    },
+    "surveyAssessment": {
+      "date": "Oct 2024 - Feb 2025",
+      "title": "Creator Assessment (SurveyJS)",
+      "description": "Developed a survey builder and dynamic form system."
+    },
+    "furni": {
+      "title": "Furni Ecommerce (ReactJS)",
+      "description": "Ecommerce website template for learning and practicing Bootstrap 5."
+    },
+    "dashboard": {
+      "title": "Dashboard Material (ReactJS)",
+      "description": "Dashboard template used to learn and practice the MUI framework."
+    },
+    "coffee": {
+      "title": "CoffeeStyle",
+      "description": "Coffee shop website template inspired by Webflow, built for learning and practice."
+    },
+    "chillaid": {
+      "title": "ChillAid",
+      "description": "Blog website template created for learning and practice."
+    }
+  },
+  "education": {
+    "title": "Education",
+    "university": {
+      "title": "Thammasat University (Bachelor's degree)",
+      "date": "2020 - 2024",
+      "program": "Bachelor's degree in Software Engineering",
+      "location": "Pathum Thani, Thailand"
+    },
+    "school": {
+      "title": "Suankularb Witayalai Rangsit",
+      "date": "2014 - 2020",
+      "program": "Science and Mathematics",
+      "location": "Pathum Thani, 12120"
+    },
+    "logoAlt": "{{title}} logo"
+  },
+  "socials": {
+    "links": "Social links",
+    "facebook": "Facebook",
+    "linkedin": "LinkedIn",
+    "email": "Email",
+    "github": "GitHub"
+  }
+}

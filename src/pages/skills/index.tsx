@@ -20,10 +20,11 @@ import SurveyJS from "../../assets/img/icon/SurveyJS.svg";
 import Syncfusion from "../../assets/img/icon/Syncfusion.svg";
 import Tailwind from "../../assets/img/icon/Taiwind.svg";
 import TypeScript from "../../assets/img/icon/typescript.svg";
+import { useTranslation } from "react-i18next";
 
-const skillGroups: { title: string; items: Technology[] }[] = [
+const skillGroups = [
   {
-    title: "Web Technologies",
+    title: "skills.groups.web",
     items: [
       { name: "HTML5", icon: HTML },
       { name: "CSS3", icon: CSS },
@@ -31,7 +32,7 @@ const skillGroups: { title: string; items: Technology[] }[] = [
     ],
   },
   {
-    title: "Tools & Utilities",
+    title: "skills.groups.tools",
     items: [
       { name: "Git", icon: Git },
       { name: "GitLab", icon: GitLab },
@@ -40,21 +41,21 @@ const skillGroups: { title: string; items: Technology[] }[] = [
     ],
   },
   {
-    title: "Language",
+    title: "skills.groups.languages",
     items: [
       { name: "JavaScript (ES6+)", icon: JavaScript },
       { name: "TypeScript", icon: TypeScript },
     ],
   },
   {
-    title: "Other",
+    title: "skills.groups.other",
     items: [
       { name: "SurveyJS", icon: SurveyJS },
       { name: "Syncfusion EJ2", icon: Syncfusion },
     ],
   },
   {
-    title: "Frameworks & Libraries",
+    title: "skills.groups.frameworks",
     items: [
       { name: "ReactJS", icon: ReactJS },
       { name: "NextJS", icon: NextJS },
@@ -66,17 +67,20 @@ const skillGroups: { title: string; items: Technology[] }[] = [
       { name: "DnD Kit", icon: DnDKit },
     ],
   },
-];
+] as const satisfies { title: string; items: Technology[] }[];
 
-const Skills = () => (
-  <div className="page-container">
-    {skillGroups.map(({ title, items }) => (
-      <section className="skill-group" key={title}>
-        <h1 className="section-title">{title}</h1>
-        <TechnologyList items={items} />
-      </section>
-    ))}
-  </div>
-);
+const Skills = () => {
+  const { t } = useTranslation();
 
+  return (
+    <div className="page-container">
+      {skillGroups.map(({ title, items }) => (
+        <section className="skill-group" key={title}>
+          <h1 className="section-title">{t(title)}</h1>
+          <TechnologyList items={items} />
+        </section>
+      ))}
+    </div>
+  );
+};
 export default Skills;

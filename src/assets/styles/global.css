@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik", "Noto Sans Thai", sans-serif;
   color: #0d1b2a;
   background: #b5e2fa;
   font-synthesis: none;
@@ -31,7 +31,7 @@ body {
 body,
 button,
 a {
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik", "Noto Sans Thai", sans-serif;
 }
 
 a {
@@ -118,6 +118,33 @@ img {
 .site-navigation a.active {
   box-shadow: 0 2px 0 var(--pale);
   font-weight: 700;
+}
+
+.language-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  margin-left: 0.35rem;
+  padding: 0.2rem;
+  border: 1px solid #b5e2fa66;
+  border-radius: 999px;
+}
+
+.language-switch button {
+  min-width: 34px;
+  padding: 0.3rem 0.45rem;
+  border: 0;
+  border-radius: 999px;
+  color: var(--sky);
+  background: transparent;
+  cursor: pointer;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.language-switch button[aria-pressed="true"] {
+  color: var(--navy);
+  background: var(--pale);
 }
 
 .menu-toggle {
@@ -595,6 +622,11 @@ img {
 
   .site-navigation a {
     padding: 0.8rem 0.5rem;
+  }
+
+  .language-switch {
+    align-self: center;
+    margin: 0 0.5rem 0 auto;
   }
 
   .site-navigation a.active {
