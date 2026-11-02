@@ -7,6 +7,7 @@ import Dashboard from "../../assets/images/projects/mainboardReact.png";
 import EJ2 from "../../assets/images/projects/ej2.png";
 import SurveyJS from "../../assets/images/projects/surveyJs.png";
 import Furni from "../../assets/images/projects/furni.png";
+import LexnetixRecommendation from "../../assets/resume/Lexnetix_Recommendation.pdf";
 import Bootstrap from "../../assets/images/icons/bootstrap5.svg";
 import CSS from "../../assets/images/icons/css.svg";
 import FluentUI from "../../assets/images/icons/fluentui.svg";
@@ -108,6 +109,7 @@ const Experiences = () => {
       key: "lexnetix",
       title: "LEXNETIX",
       technologies: lexnetixTechnologies,
+      certificateUrl: LexnetixRecommendation,
     },
     {
       key: "bangkok",
