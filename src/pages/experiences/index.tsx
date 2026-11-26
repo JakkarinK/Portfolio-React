@@ -68,10 +68,12 @@ const lexnetixProjects: {
   key: "documentEditor" | "dndAssessment" | "surveyAssessment";
   image: string;
   technologies: Technology[];
+  website: string;
 }[] = [
   {
     key: "documentEditor",
     image: EJ2,
+    website: "https://jam.dev/c/c4acf788-c2fd-4178-8eaa-76398c598246",
     technologies: [
       { name: "Syncfusion EJ2", icon: Syncfusion },
       { name: "Fluent UI", icon: FluentUI },
@@ -82,6 +84,7 @@ const lexnetixProjects: {
   {
     key: "dndAssessment",
     image: DnDKit,
+    website: "https://jam.dev/c/672283a4-3a13-4b27-87a3-2e34d10945cc",
     technologies: [
       { name: "DnD Kit", icon: DnDKitIcon },
       { name: "Fluent UI", icon: FluentUI },
@@ -92,6 +95,7 @@ const lexnetixProjects: {
   {
     key: "surveyAssessment",
     image: SurveyJS,
+    website: "https://jam.dev/c/b5854b79-8705-4ebb-b57d-0c6be0ffc320",
     technologies: [
       { name: "SurveyJS", icon: SurveyJSIcon },
       { name: "PrimeReact", icon: PrimeReact },
