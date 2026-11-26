@@ -1,4 +1,4 @@
-import ResumeDownloads from "../../../../components/resumeDownloads";
+import ResumeDownloads from "../../../../components/ResumeDownloads";
 import { socialLinks } from "../../../../data/socialLinks";
 import { useTranslation } from "react-i18next";
 

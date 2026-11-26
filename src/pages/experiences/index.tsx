@@ -24,8 +24,8 @@ import SurveyJSIcon from "../../assets/images/icons/surveyJs.svg";
 import Syncfusion from "../../assets/images/icons/syncfusion.svg";
 import Tailwind from "../../assets/images/icons/tailwind.svg";
 import TypeScript from "../../assets/images/icons/typescript.svg";
-import type { Technology } from "../../components/technologyList";
-import TechnologyList from "../../components/technologyList";
+import type { Technology } from "../../components/TechnologyList";
+import TechnologyList from "../../components/TechnologyList";
 
 type Project = {
   date?: string;

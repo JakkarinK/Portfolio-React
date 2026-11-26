@@ -1,5 +1,5 @@
-import type { Technology } from "../../components/technologyList";
-import TechnologyList from "../../components/technologyList";
+import type { Technology } from "../../components/TechnologyList";
+import TechnologyList from "../../components/TechnologyList";
 
 import Bootstrap from "../../assets/images/icons/bootstrap5.svg";
 import Claude from "../../assets/images/icons/claude.svg";

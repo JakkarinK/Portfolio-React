@@ -1,4 +1,4 @@
-import Contact from "../../components/contact";
+import Contact from "../../components/Contact";
 import { socialLinks } from "../../data/socialLinks";
 import { useTranslation } from "react-i18next";
 
